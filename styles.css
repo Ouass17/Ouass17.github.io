@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+body {
+    background-color: rgba(250,250,249,255);
+}
+.article {
+    width: 384px;
+    border: 1px solid;
+    border-color: rgba(231,233,236,255);
+    margin: 60px;
+    padding: 20px;
+    background-color: white;
+}
+
+.article::after{
+    content: "";
+    display: block;
+    width : 25%;
+    height: 3px;
+    background: #000;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.article:hover::after{
+    transform: scale(1);
+}
+
+.article-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+.article-type {
+    color: rgba(201,204,209,255);
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 10px;
+    padding: 7px;
+    margin: 0;
+    border-radius: 13px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(201,204,209,255);
+}
+.article-date {
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 11px;
+    transform: translate(0%,-50%);
+}
+.article-image {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+h4 {
+    margin: 7px 0;
+    font-family: Ubuntu;
+    font-weight: 700;
+    font-size: 14px;
+}
+p {
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+}
+header {
+    background-color: white;
+    width: 100vw;
+    border: 1px solid;
+    border-color: rgba(231,233,236,255);
+    transform: translate(-1%, -10%);
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.logo {
+    height: 50px;
+    margin: 0 20px;
+}
+.title {
+    font-family: Ubuntu;
+    font-weight: 700;
+    font-size: 13px;
+    margin: 20px;
+}
+
+.heart {
+    height: 30px;
+}
+.icon {
+    height: 20px;
+    transform: translate(25%, 25%);
+}
+.image-container {
+    position: relative;
+}
+.header-image {
+    width: 100vw;
+    height: 17vh;
+    object-fit:cover;
+    transform: translate(-1%, -10%);
+}
+.header-text {
+    position: absolute;
+    left: 17%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 40px;
+    color: white;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.links {
+    text-decoration: none;
+    color: black;
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 14px;
+}
+@media (max-width: 1000px){
+    .article {
+        width: 90vw;
+    }
+    .article-type {
+        width: 160px;
+        font-size: 40px;
+        padding: 20px;
+        border-radius: 48px;
+        margin: 20px;
+    }
+    .article-date {
+        font-size: 40px;
+        transform: translate(0, 0);
+    }
+    .header-text {
+        font-size: 100px;
+    }
+    .logo {
+        height: 120px;
+        margin: 40px;
+    }
+    .heart {
+        height: 80px;
+    }
+    .title {
+        font-size: 32px;
+    }
+    .icon {
+        height: 50px;
+        transform: translate(25%, 25%);
+    }
+    p {
+        font-size: 28px;
+    }
+    h4 {
+        margin: 7px 0;
+        font-family: Ubuntu;
+        font-weight: 700;
+        font-size: 28px;
+    }
+    .links {
+        font-weight: 700;
+        font-size: 28px;
+    }
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-color: rgba(231,233,236,255);
+    background-color: white;
+}
+
+.footer-title {
+    margin: 10px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.footer-links-column {
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#heart-titre {
+    transform: translate(10%, 35%);
+}
+h3 {
+    font-family: Ubuntu;
+    font-weight: 400;
+}
+a{
+    font-family: Ubuntu;
+    color: black;
+}
+.faq {
+    display: flex;
+}
+.content {
+    width: 65%;
+    margin: 0px 120px;
+}
+.image-half {
+    width: 35%;
+    transform: translate(-1%, -1%);
+}
+.horaires {
+    display: flex;
+}
+.horaires-titre {
+    width: 30%;
+}
+#search {
+    border-style: hidden;
+    width: 50%;
+    padding: 10px;
+    margin: 20px;
+    background-color: white;
+    border: 1px solid rgba(231,233,236,255);
+    border-radius: 50px;
+}
+.jobs{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: Ubuntu;
+    padding: 20px;
+}
+.table {
+    margin: 0px 10vw;
+}
+.table th{
+        padding: 12px;
+        text-align: left;
+        font-weight: 400;
+        background-color: rgba(231,233,236,255);
+        color: black;
+}
+.table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.index {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: auto;
+}
+.homepage-components {
+    display: flex;
+    width: 60vw;
+    height: 35vh;
+}
+.components-content {
+    margin: 3%;
+}
+.components-content p {
+    font-size: 12px;
+}
+.components-content h4 {
+    font-size: 14px;
+}
+.components-image {
+    height: 30vh;
+    width: 220vw;
+    object-fit:cover;
+    padding: 25px;
+}
